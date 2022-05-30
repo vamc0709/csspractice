@@ -2,7 +2,7 @@ var backdrop = document.querySelector(".backdrop");
 // debugger;
 // console.log(backdrop);
 var modal = document.querySelector(".modal");
-// var modalNoButton = document.querySelectorAll(".modal_action--negative");
+var modalNoButton = document.querySelector(".modal_action--negative");
 var selectPlanButtons = document.querySelectorAll(".plan button");
 // console.dir(selectPlanButtons);
 
@@ -29,9 +29,9 @@ backdrop.addEventListener("click", function () {
   closeModal();
 });
 
-// if (modalNoButton) {
-  // modalNoButton.addEventListener("click", closeModal);
-// }
+if (modalNoButton) {
+  modalNoButton.addEventListener("click", closeModal); 
+}
 
 function closeModal() {
   //   backdrop.style.display = "none";
